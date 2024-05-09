@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* index.html .................................................................................................. */
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(199, 198, 198);
+    font-family: "Sedan SC", serif;
+    height: 120vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 18px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 27px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    /* background-color: rgb(19, 224, 67); */
+    width: 96vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: rgb(193, 0, 119); */
+    height: 58vh;
+    width: 80vw;
+    margin: 140px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello{
+    font-size: 2em;
+}
+
+.name{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 2em;
+    font-family: "Kalam", cursive;
+}
+
+.moreAbout{
+    font-size: 1.3em;
+    margin-top: 10px;
+    font-family: "Teachers", sans-serif;
+}
+
+.buttons{
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+.btn{
+    padding: 9px 14px;
+    border-radius: 40px;
+    color: white;
+    background-color: rgb(154, 0, 193);
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(154, 0, 193);
+    background-color: white;
+}
+
+.devPic img{
+    height: 58vh;
+}
+
+
+
+/* blog.html ..................................................................................................... */
+
+.blogItem{
+    margin: 20px;
+}
+
+.blogContainer{
+    margin: 0 62px;
+}
+
+h1{
+    font-family: "Teachers", sans-serif;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: "Teachers", sans-serif;
+}
+
+
+
+
+/* contact.html .............................................................................................. */
+
+.btn-sm{
+    font-size: 10px;
+    margin: 14px 0;
+    padding: 7px 13px;
+}
+
+.contactform{
+    padding: 0 34px;
+    padding-top: 135px;
+    margin: -65px 100px;
+}
+
+.contactform h1{
+    /* padding-bottom: 22px; */
+    font-family: "Teachers", sans-serif;
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.contactform form{
+    margin: 0 30px;
+}
+
+.form-text{
+    color: midnightblue;
+    font-family: "Teachers", sans-serif;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+
+/* intro.html ..................................................................................................... */
+
+.intro{
+    margin: 0 62px;
+}
+
+.intro h2{
+    font-family: "Teachers", sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: "Teachers", sans-serif;
+    margin: 12px;
+}
+
+.skillContainer{
+    padding: 10px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.skill{
+    height: 5.5px;
+    width: 220px;
+    background-color: red;
+}
+
+.hundred{
+    width: 220px;
+    background-color: blueviolet;
+}
+
+.fifty{
+    width: 120px;
+    background-color: blue;
+}
+
+.t5{
+    width: 55px;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    font-size: 20px;
+}
+
+
+.cross{
+    margin-left: 141px;
+    font-size: 25px;
+}
+
+
+
+@media (max-width : 804px){
+    /* *{
+        background-color: red;
+    } */
+    .buttons{
+        font-size: 5px;
+    }
+
+    .devPic{
+        display: none;
+    }
+
+    .devInfo{
+        font-size: 15px;
+    }
+
+    .intro, .blogContainer{
+        margin: 40px 8px;
+    }
+
+    .contactform {
+        padding: 0 34px;
+        padding-top: 60px;
+        margin: -5px -25px;
+    }
+
+    /* .contactform h1{
+        padding-bottom: 22px;
+        font-family: "Teachers", sans-serif;
+    } */
+
+    /* .contactform form {
+        margin: 0px 10px;
+    } */
+}
+
+
+
+
