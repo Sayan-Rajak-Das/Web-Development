@@ -8,7 +8,8 @@ app.post("/register", (req, res)=> {
 
 // go to localhost:5000 to get the complete URL
 app.get("/", (req,res)=>{
-    console.log("get request");
+    console.log("get request received");
+    res.send("<h1>Node Server up and running!</h1>");
 })
 
 const PORT = process.env.PORT || 5000;
