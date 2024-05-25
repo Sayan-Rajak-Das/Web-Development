@@ -13,3 +13,13 @@ document.querySelector('.hamburger').addEventListener("click", function(){
         }, 300);
     }
 });
+
+document.getElementById('fetchForm').addEventListener('submit', submitFormFetch);
+
+function submitFormFetch(event) {
+    
+    event.preventDefault();
+
+    var fetchForm = document.getElementById('fetchForm');
+            fetchForm.reset();
+}
