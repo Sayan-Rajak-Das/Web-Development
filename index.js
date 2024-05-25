@@ -24,5 +24,26 @@ function submitFormFetch(event) {
 
     var fetchForm = document.getElementById('fetchForm');
             fetchForm.reset();
+
+
+    
+
+            // const form = document.getElementById('fetchForm');
+            // const formData = new FormData(form);
+        
+            // fetch('http://localhost:5000/register', {
+            //     method: 'POST',
+            //     body: formData
+            // })
+            // .then(response => {
+            //     if (response.ok) {
+            //         console.log('Request received');
+            //     } else {
+            //         console.error('Request failed');
+            //     }
+            // })
+            // .catch(error => {
+            //     console.error('Error:', error);
+            // });
  }
  
