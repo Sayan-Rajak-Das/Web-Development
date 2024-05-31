@@ -1,10 +1,30 @@
+body {
+    background-image: url(sky.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 100vh;
+}
+
+.header {
+    font-family: Courier, monospace;
+    text-align: center;
+}
+
 .container {
     background-color: blanchedalmond;
-    margin-top: 10vh;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* backdrop-filter: blur(10px); */
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw; /* Adjust the width as needed */
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 .font-style {
     font-family: Georgia, serif;
+}
+
+.box-size {
+    padding-bottom: 11rem;
 }
