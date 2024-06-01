@@ -1,6 +1,5 @@
 body {
     background-image: url(sky.png);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     height: 100vh;
 }
@@ -11,14 +10,43 @@ body {
 }
 
 .container {
-    background-color: blanchedalmond;
-    /* backdrop-filter: blur(10px); */
+    /* background-color: blanchedalmond; */
+    background-color: transparent;
     margin-top: 7vh;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw; /* Adjust the width as needed */
+    width: 80vw;         /* Adjust the width as needed */
     padding: 1rem;
     border-radius: 8px;
+    border-right: solid 3.5px;
+    border-bottom: solid 3.5px;
+    border-top: solid 0.5px;
+    border-left: solid 0.5px;
+}
+
+.myBtn {
+    font-size: 0.8em;
+    color: antiquewhite;
+    background-color: blueviolet;
+    border: thick;
+    border-radius: 30px;
+    border-bottom: 1px solid darkturquoise;
+    border-right: 1px solid darkturquoise;
+    margin: .5px 1px;
+    cursor: pointer;
+}
+
+.myBtn:hover {
+    color: rgb(0, 21, 92);
+    background-color: antiquewhite;
+}
+
+#cityInput, #weatherReport {
+    background-color: rgb(196 255 229 / 39%);
+    border-right-width: 3px;
+    border-right-color: darkturquoise;
+    border-bottom-width: 3px;
+    border-bottom-color: darkturquoise;
 }
 
 .font-style {
