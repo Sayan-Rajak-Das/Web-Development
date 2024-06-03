@@ -6,7 +6,7 @@ document.getElementById('weatherForm').addEventListener('submit', function(event
   $('.weatherBox').slideDown(1000);
 
   const city = document.getElementById('cityInput').value;
-  const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=57f047b9f6a1af65e88df22b7a1d6b8e`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=57f047b9f6a1af65e88df22b7a1d6b8e`;
 
   fetch(apiUrl)
       .then(response => {
